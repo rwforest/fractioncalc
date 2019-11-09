@@ -1,0 +1,11 @@
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/bin/Debug/netcoreapp3.0/FractionCLI
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/bin/Debug/netcoreapp3.0/FractionCLI.deps.json
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/bin/Debug/netcoreapp3.0/FractionCLI.runtimeconfig.json
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/bin/Debug/netcoreapp3.0/FractionCLI.runtimeconfig.dev.json
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/bin/Debug/netcoreapp3.0/FractionCLI.dll
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/bin/Debug/netcoreapp3.0/FractionCLI.pdb
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/obj/Debug/netcoreapp3.0/FractionCLI.csprojAssemblyReference.cache
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/obj/Debug/netcoreapp3.0/FractionCLI.AssemblyInfoInputs.cache
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/obj/Debug/netcoreapp3.0/FractionCLI.AssemblyInfo.cs
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/obj/Debug/netcoreapp3.0/FractionCLI.dll
+/Users/jasonyip/Projects/FractionCLI/FractionCLI/obj/Debug/netcoreapp3.0/FractionCLI.pdb

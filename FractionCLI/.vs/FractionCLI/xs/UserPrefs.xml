@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{333BF276-CC8C-4D54-88FA-CB728D4FB27F}|Default">
+  <MonoDevelop.Ide.ItemProperties.FractionCLI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FractionCLI/Expression.cs">
+    <Files>
+      <File FileName="FractionCLI/Program.cs" Line="14" Column="6" />
+      <File FileName="FractionCLI/FractionCalculator.cs" Line="187" Column="45" />
+      <File FileName="FractionCLI/Expression.cs" Line="6" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FractionCLI" expanded="True">
+            <Node name="FractionCLI" expanded="True">
+              <Node name="Expression.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>Numerator</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jasonyip/Projects/FractionCLI/FractionCLI/FractionCalculator.cs" relfile="FractionCLI/FractionCalculator.cs" line="138" column="1" />
+      <Breakpoint file="/Users/jasonyip/Projects/FractionCLI/FractionCLI/FractionCalculator.cs" relfile="FractionCLI/FractionCalculator.cs" line="38" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
