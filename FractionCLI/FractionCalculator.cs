@@ -242,7 +242,7 @@ namespace FractionCLI
         /// <returns></returns>
         public static bool IsFraction(string fraction, out GroupCollection groups)
         {
-            string fractionPattern = @"^\s*(\d+)(\s*\/(\d*)|_+(\d+)\s*\/\s*(\d+))?\s*$";
+            string fractionPattern = @"^\s*(-{0,1}\d+)(\s*\/(\d*)|_+(\d+)\s*\/\s*(\d+))?\s*$";
             Regex regex = new Regex(fractionPattern, RegexOptions.IgnoreCase);
             
             Match m = regex.Match(fraction);

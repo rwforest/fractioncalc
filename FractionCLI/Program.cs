@@ -40,7 +40,7 @@ namespace FractionCLI
                         }
                     }
                 }
-            }
+            }            
         }
 
         public void RunTestCases()
