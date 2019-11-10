@@ -130,6 +130,9 @@ namespace FractionCLI
         /// <returns></returns>
         public int GCD(int num1, int num2)
         {
+            num1 = Math.Abs(num1);
+            num2 = Math.Abs(num2);
+
             if (num2 == 0)
                 return num1;
 
@@ -166,10 +169,13 @@ namespace FractionCLI
         /// <param name="den">Denominator</param>
         private void ImpropertoMixed(int num, int den)
         {
-            if (num > den)
+            if (Math.Abs(num) > Math.Abs(den))
             {
                 Whole = num / den;
                 Numerator = Numerator % Denominator;
+
+                if (Numerator < 0)
+                    Numerator *= -1;
             }
         }
 
@@ -252,7 +258,7 @@ namespace FractionCLI
         public string ToString()
         {
             ImpropertoMixed(Numerator, Denominator);
-            string ret = Whole > 0 ? $"{Whole}_{Numerator}/{Denominator}" : $"{Numerator}/{Denominator}";
+            string ret = Numerator != 0 ? (Whole != 0 ? $"{Whole}_{Numerator}/{Denominator}" : $"{Numerator}/{Denominator}") : Whole.ToString();
 
             // convert back to improper for calc
             MixedtoImproper(Whole, Numerator, Denominator);

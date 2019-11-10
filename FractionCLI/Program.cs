@@ -6,26 +6,41 @@ namespace FractionCLI
     {
         static void Main(string[] args)
         {
-            new Program().RunTestCases();
+            //new Program().RunTestCases();
 
-            string example = "Example Input: ? 2_3/8 + 9/8";
+            string example = "Example Input: ? 2_3/8 + 9/8\nEnter 'exit' to exit the program";
             Console.WriteLine(example);
 
-            string line = Console.ReadLine();
-            if (!line.StartsWith('?'))
+            while (true)
             {
-                Console.WriteLine(example);
-            }
-            else
-            {
-                string input1, input2, op;
-                if (Expression.IsValidExpression(line.Trim('?'), out input1, out input2, out op))
+                string line = Console.ReadLine();
+
+                if (line.ToLower().Trim().Equals("exit"))
+                    break;
+
+                if (!line.StartsWith('?'))
                 {
-                    Fraction f1 = new Fraction(input1.Trim());
-                    Fraction f2 = new Fraction(input2.Trim());
-                    Console.WriteLine(Expression.Calc(f1, f2, op[0]));
+                    Console.WriteLine(example);
                 }
-            }
+                else
+                {
+                    string input1, input2, op;
+                    if (Expression.IsValidExpression(line.Trim('?'), out input1, out input2, out op))
+                    {
+                        try
+                        {
+                            Fraction f1 = new Fraction(input1.Trim());
+                            Fraction f2 = new Fraction(input2.Trim());
+                            Console.WriteLine(Expression.Calc(f1, f2, op[0]));
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.ToString());
+                            Console.WriteLine(example);
+                        }
+                    }
+                }
+            }            
         }
 
         public void RunTestCases()

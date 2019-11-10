@@ -18,20 +18,22 @@ namespace FractionCLI
             op = input1 = input2 = string.Empty;
 
             // assuming only two values
-            string expressionPattern = @".+\s+(\+|-|\*|\/)\s+.+";
+            string expressionPattern = @"(.+)\s+(\+|-|\*|\/)\s+(.+)";
 
             Regex regex = new Regex(expressionPattern, RegexOptions.IgnoreCase);
 
             Match m = regex.Match(expression);
 
-            if (m.Success)
+            if (m.Success && m.Groups.Count >= 3)
             {
-                input1 = expression.Split(m.Groups[1].Value)[0];
-                input2 = expression.Split(m.Groups[1].Value)[1];
-                op = m.Groups[1].Value;
+                input1 = m.Groups[1].Value;
+                input2 = m.Groups[3].Value;
+                op = m.Groups[2].Value;
+
+                return true;
             }
 
-            return m.Success;
+            return false;
         }
 
         /// <summary>
