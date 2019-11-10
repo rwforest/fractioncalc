@@ -35,12 +35,12 @@ namespace FractionCLI
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine(ex.ToString());
+                            System.Diagnostics.Debug.WriteLine(ex.ToString());
                             Console.WriteLine(example);
                         }
                     }
                 }
-            }            
+            }
         }
 
         public void RunTestCases()
