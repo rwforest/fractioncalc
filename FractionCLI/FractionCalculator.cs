@@ -5,7 +5,7 @@ namespace FractionCLI
 {
     public class Fraction
     {
-        public int Whole { get; set; }        
+        public int Whole { get; set; }
         public int Numerator { get; set; }
         public int Denominator { get; set; }
 
@@ -135,6 +135,8 @@ namespace FractionCLI
 
             if (num2 == 0)
                 return num1;
+            else if (num1 == 0)
+                return num2;
 
             while (num1 != num2)
                 if (num1 < num2)
@@ -244,7 +246,7 @@ namespace FractionCLI
         {
             string fractionPattern = @"^\s*(-{0,1}\d+)(\s*\/(\d*)|_+(\d+)\s*\/\s*(\d+))?\s*$";
             Regex regex = new Regex(fractionPattern, RegexOptions.IgnoreCase);
-            
+
             Match m = regex.Match(fraction);
             groups = m.Groups;
 
