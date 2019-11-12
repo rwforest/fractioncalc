@@ -17,3 +17,5 @@ Negative fracton:
 
 **Usage**:
 ? 1_1/2 + 2/3
+
+For more information on how to run .NET Core apps, please refer to: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-run?tabs=netcore30
