@@ -15,5 +15,5 @@ e.g. 10/3
 Negative fracton:
 -Num/Den or -Whole_Num/Den
 
-**Usage**
+**Usage**:
 ? 1_1/2 + 2/3
