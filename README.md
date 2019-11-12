@@ -3,7 +3,7 @@ This is a simple C# fraction calculator written in .NET Core 3.0. It has basic o
 
 In this example, an expression tree was not built but you can easily build your own expression tree and perform basic Math with the +, -, * and / operators.
 
-**Fraction format**
+**Fraction format**<br/>
 Mixed fraction:
 Whole_Num/Den
 e.g. 1_1/2
